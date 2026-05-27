@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-system-black: #0a0a0a;
+  --color-system-emerald: #10b981;
+}
+
+body {
+  background-color: var(--color-system-black);
+  color: #d4d4d8;
+  background-image: 
+    radial-gradient(circle at 50% 0%, #061910 0%, transparent 50%),
+    linear-gradient(to bottom, transparent, #0a0a0a 80%);
+}
+
+::selection {
+  background-color: rgba(16, 185, 129, 0.3);
+  color: #fff;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Underground Rap Vault",
+  "description": "Syrový, temný a rychlý prostor pre underground rap, s persistentním audio přehrávačem, textovým archivem a nekompromisním manifestem.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
