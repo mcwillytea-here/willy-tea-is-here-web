@@ -1,3 +1,4 @@
+import { PlayButton } from '@/components/archive/play-button';
 import { Metadata } from 'next';
 import { LyricsInteractive } from '@/components/archive/lyrics-interactive';
 import Image from 'next/image';
@@ -95,6 +96,13 @@ export default async function TrackDetail({ params }: Props) {
             <p className="text-zinc-500 max-w-lg leading-relaxed text-sm">
               Klikni na podtržené rýmy pro zobrazení mýho breakdownu. Kdo nečte mezi řádky, ten radši ať neposlouchá.
             </p>
+            <PlayButton track={{
+              id: track.slug,
+              title: track.title,
+              audioUrl: track.audio_url,
+              coverUrl: track.cover_url,
+              genre: track.title.includes('Klubový') ? 'TECHNO' : 'RAP'
+            }} />
         </div>
       </div>
       
